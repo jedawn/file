@@ -1,0 +1,490 @@
+{
+    "status": true, 
+    "msg": "SUCCESS", 
+    "currPg": 0, 
+    "totalPg": 0, 
+    "data": [
+        {
+            "data": {
+                "dataMap": {
+                    "extId": "1", 
+                    "order_detail": [
+                        {
+                            "id": 1, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1001, 
+                            "goodsname": "啤酒", 
+                            "unit": "箱", 
+                            "goodscode": "8918717", 
+                            "warehousecode": "CD-SL-001|BZ|CDSD", 
+                            "tgoodsamount": 2, 
+                            "weight": 1
+                        }, 
+                        {
+                            "id": 2, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1004, 
+                            "goodsname": "纸", 
+                            "unit": "包", 
+                            "goodscode": "352532525", 
+                            "tgoodsamount": 321, 
+                            "weight": 1
+                        }
+                    ], 
+                    "order_info": {
+                        "id": 1, 
+                        "fid": "ABC646454", 
+                        "cid": "2334242525", 
+                        "customerid": "2", 
+                        "customername": "傻子公司", 
+                        "supplier": "是个帅哥", 
+                        "duetime": "Sep 25, 2016 12:03:03 AM", 
+                        "createtime": "Sep 24, 2016 12:03:32 AM", 
+                        "warehousecode": "CD-SL-001"
+                    }
+                }
+            }, 
+            "curr": {
+                "id": "allocate_position", 
+                "description": "分配库位", 
+                "title": "分配库位", 
+                "prev": "allocate_human", 
+                "next": "queue", 
+                "isInputPassed": false, 
+                "isHumanStep": true, 
+                "assignee": "lance", 
+                "processId": "product_in1475999286824"
+            }, 
+            "fields": [
+                {
+                    "name": "goods_pos_1004", 
+                    "description": "纸(包)", 
+                    "type": "SELECT", 
+                    "mandatory": true, 
+                    "showTime": false, 
+                    "datas": [
+                        {
+                            "CD-SL-001|BZ|CODEE": "CD-SL-001|BZ|CODEE"
+                        }, 
+                        {
+                            "CD-SL-001|BZ|CDBGF": "CD-SL-001|BZ|CDBGF"
+                        }, 
+                        {
+                            "CD-SL-001|NQ-01|BQ-20": "CD-SL-001|NQ-01|BQ-20"
+                        }, 
+                        {
+                            "CD-SL-001|BZ|CDSD": "CD-SL-001|BZ|CDSD"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "data": {
+                "dataMap": {
+                    "extId": "1", 
+                    "order_detail": [
+                        {
+                            "id": 1, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1001, 
+                            "goodsname": "啤酒", 
+                            "unit": "箱", 
+                            "goodscode": "8918717", 
+                            "warehousecode": "CD-SL-001|BZ|CDSD", 
+                            "tgoodsamount": 2, 
+                            "weight": 1
+                        }, 
+                        {
+                            "id": 2, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1004, 
+                            "goodsname": "纸", 
+                            "unit": "包", 
+                            "goodscode": "352532525", 
+                            "tgoodsamount": 321, 
+                            "weight": 1
+                        }
+                    ], 
+                    "order_info": {
+                        "id": 1, 
+                        "fid": "ABC646454", 
+                        "cid": "2334242525", 
+                        "customerid": "2", 
+                        "customername": "傻子公司", 
+                        "supplier": "是个帅哥", 
+                        "duetime": "Sep 25, 2016 12:03:03 AM", 
+                        "createtime": "Sep 24, 2016 12:03:32 AM", 
+                        "warehousecode": "CD-SL-001"
+                    }
+                }
+            }, 
+            "curr": {
+                "id": "queue", 
+                "description": "排队，分配卸货平台，取号", 
+                "title": "排队取号", 
+                "prev": "allocate_position", 
+                "next": "goods_check", 
+                "isInputPassed": false, 
+                "isHumanStep": true, 
+                "assignee": "admin", 
+                "processId": "product_in1475999196814"
+            }, 
+            "fields": [
+                {
+                    "name": "platform", 
+                    "description": "选择卸货平台，点确定取号，号码会自动打印出来！", 
+                    "type": "SELECT", 
+                    "mandatory": true, 
+                    "showTime": false, 
+                    "datas": [
+                        {
+                            "1": "1号平台"
+                        }, 
+                        {
+                            "2": "2号平台"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "data": {
+                "dataMap": {
+                    "extId": "1", 
+                    "order_detail": [
+                        {
+                            "id": 1, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1001, 
+                            "goodsname": "啤酒", 
+                            "unit": "箱", 
+                            "goodscode": "8918717", 
+                            "warehousecode": "CD-SL-001|BZ|CDSD", 
+                            "tgoodsamount": 2, 
+                            "weight": 1
+                        }, 
+                        {
+                            "id": 2, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1004, 
+                            "goodsname": "纸", 
+                            "unit": "包", 
+                            "goodscode": "352532525", 
+                            "tgoodsamount": 321, 
+                            "weight": 1
+                        }
+                    ], 
+                    "order_info": {
+                        "id": 1, 
+                        "fid": "ABC646454", 
+                        "cid": "2334242525", 
+                        "customerid": "2", 
+                        "customername": "傻子公司", 
+                        "supplier": "是个帅哥", 
+                        "duetime": "Sep 25, 2016 12:03:03 AM", 
+                        "createtime": "Sep 24, 2016 12:03:32 AM", 
+                        "warehousecode": "CD-SL-001"
+                    }
+                }
+            }, 
+            "curr": {
+                "id": "comfirm_order", 
+                "description": "确认入库单有效，而且我们有足够仓库和人力处理！", 
+                "title": "入库单确认", 
+                "prev": "getData", 
+                "next": "allocate_human", 
+                "isInputPassed": false, 
+                "isHumanStep": true, 
+                "assignee": "lance", 
+                "processId": "product_in1475999736819"
+            }, 
+            "fields": [
+                {
+                    "name": "passed_ind", 
+                    "description": "是否通过确认？", 
+                    "type": "CHOICE", 
+                    "mandatory": true, 
+                    "showTime": false, 
+                    "datas": [
+                        {
+                            "true": "是"
+                        }, 
+                        {
+                            "false": "否"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "reason", 
+                    "description": "原因", 
+                    "type": "TEXT", 
+                    "mandatory": true, 
+                    "showTime": false
+                }
+            ]
+        }, 
+        {
+            "data": {
+                "dataMap": {
+                    "extId": "1", 
+                    "order_detail": [
+                        {
+                            "id": 1, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1001, 
+                            "goodsname": "啤酒", 
+                            "unit": "箱", 
+                            "goodscode": "8918717", 
+                            "warehousecode": "CD-SL-001|BZ|CDSD", 
+                            "tgoodsamount": 2, 
+                            "weight": 1
+                        }, 
+                        {
+                            "id": 2, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1004, 
+                            "goodsname": "纸", 
+                            "unit": "包", 
+                            "goodscode": "352532525", 
+                            "tgoodsamount": 321, 
+                            "weight": 1
+                        }
+                    ], 
+                    "order_info": {
+                        "id": 1, 
+                        "fid": "ABC646454", 
+                        "cid": "2334242525", 
+                        "customerid": "2", 
+                        "customername": "傻子公司", 
+                        "supplier": "是个帅哥", 
+                        "duetime": "Sep 25, 2016 12:03:03 AM", 
+                        "createtime": "Sep 24, 2016 12:03:32 AM", 
+                        "warehousecode": "CD-SL-001"
+                    }
+                }
+            }, 
+            "curr": {
+                "id": "allocate_human", 
+                "description": "分配装卸人员", 
+                "title": "分配装卸人员", 
+                "prev": "comfirm_order", 
+                "next": "allocate_position", 
+                "isInputPassed": false, 
+                "isHumanStep": true, 
+                "assignee": "lance", 
+                "processId": "product_in1475999316815"
+            }, 
+            "fields": [
+                {
+                    "name": "unload_humans", 
+                    "description": "装卸人员", 
+                    "type": "MSELECT", 
+                    "mandatory": true, 
+                    "showTime": false, 
+                    "datas": [
+                        {
+                            "1": "李明"
+                        }, 
+                        {
+                            "7": "圆通"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "data": {
+                "dataMap": {
+                    "extId": "1", 
+                    "order_detail": [
+                        {
+                            "id": 1, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1001, 
+                            "goodsname": "啤酒", 
+                            "unit": "箱", 
+                            "goodscode": "8918717", 
+                            "warehousecode": "CD-SL-001|BZ|CDSD", 
+                            "tgoodsamount": 2, 
+                            "weight": 1
+                        }, 
+                        {
+                            "id": 2, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1004, 
+                            "goodsname": "纸", 
+                            "unit": "包", 
+                            "goodscode": "352532525", 
+                            "tgoodsamount": 321, 
+                            "weight": 1
+                        }
+                    ], 
+                    "order_info": {
+                        "id": 1, 
+                        "fid": "ABC646454", 
+                        "cid": "2334242525", 
+                        "customerid": "2", 
+                        "customername": "傻子公司", 
+                        "supplier": "是个帅哥", 
+                        "duetime": "Sep 25, 2016 12:03:03 AM", 
+                        "createtime": "Sep 24, 2016 12:03:32 AM", 
+                        "warehousecode": "CD-SL-001"
+                    }
+                }
+            }, 
+            "curr": {
+                "id": "print_productin", 
+                "description": "打单盖章", 
+                "title": "打单", 
+                "prev": "manager_check", 
+                "next": "end", 
+                "isInputPassed": false, 
+                "isHumanStep": true, 
+                "assignee": "admin", 
+                "processId": "product_in1475998990018"
+            }, 
+            "fields": [
+                {
+                    "name": "memo", 
+                    "description": "备注", 
+                    "type": "TEXT", 
+                    "mandatory": false, 
+                    "showTime": false, 
+                    "defaultValue": "无"
+                }
+            ]
+        }, 
+        {
+            "data": {
+                "dataMap": {
+                    "extId": "1", 
+                    "order_detail": [
+                        {
+                            "id": 1, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1001, 
+                            "goodsname": "啤酒", 
+                            "unit": "箱", 
+                            "goodscode": "8918717", 
+                            "warehousecode": "CD-SL-001|BZ|CDSD", 
+                            "tgoodsamount": 2, 
+                            "weight": 1
+                        }, 
+                        {
+                            "id": 2, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1004, 
+                            "goodsname": "纸", 
+                            "unit": "包", 
+                            "goodscode": "352532525", 
+                            "tgoodsamount": 321, 
+                            "weight": 1
+                        }
+                    ], 
+                    "order_info": {
+                        "id": 1, 
+                        "fid": "ABC646454", 
+                        "cid": "2334242525", 
+                        "customerid": "2", 
+                        "customername": "傻子公司", 
+                        "supplier": "是个帅哥", 
+                        "duetime": "Sep 25, 2016 12:03:03 AM", 
+                        "createtime": "Sep 24, 2016 12:03:32 AM", 
+                        "warehousecode": "CD-SL-001"
+                    }
+                }
+            }, 
+            "curr": {
+                "id": "goods_check", 
+                "description": "质检合格不合格", 
+                "title": "质检", 
+                "prev": "queue", 
+                "next": "manager_check", 
+                "isInputPassed": false, 
+                "isHumanStep": true, 
+                "assignee": "lance", 
+                "processId": "product_in1475999046819"
+            }, 
+            "fields": [
+                {
+                    "name": "qos_passed_ind", 
+                    "description": "是否通过质检？", 
+                    "type": "CHOICE", 
+                    "mandatory": true, 
+                    "showTime": false, 
+                    "datas": [
+                        {
+                            "true": "是"
+                        }, 
+                        {
+                            "false": "否"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "data": {
+                "dataMap": {
+                    "extId": "1", 
+                    "order_detail": [
+                        {
+                            "id": 1, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1001, 
+                            "goodsname": "啤酒", 
+                            "unit": "箱", 
+                            "goodscode": "8918717", 
+                            "warehousecode": "CD-SL-001|BZ|CDSD", 
+                            "tgoodsamount": 2, 
+                            "weight": 1
+                        }, 
+                        {
+                            "id": 2, 
+                            "fid": "ABC646454", 
+                            "goodsid": 1004, 
+                            "goodsname": "纸", 
+                            "unit": "包", 
+                            "goodscode": "352532525", 
+                            "tgoodsamount": 321, 
+                            "weight": 1
+                        }
+                    ], 
+                    "order_info": {
+                        "id": 1, 
+                        "fid": "ABC646454", 
+                        "cid": "2334242525", 
+                        "customerid": "2", 
+                        "customername": "傻子公司", 
+                        "supplier": "是个帅哥", 
+                        "duetime": "Sep 25, 2016 12:03:03 AM", 
+                        "createtime": "Sep 24, 2016 12:03:32 AM", 
+                        "warehousecode": "CD-SL-001"
+                    }
+                }
+            }, 
+            "curr": {
+                "id": "manager_check", 
+                "description": "入库主管签字", 
+                "title": "主管签单", 
+                "prev": "goods_check", 
+                "next": "print_productin", 
+                "isInputPassed": false, 
+                "isHumanStep": true, 
+                "assignee": "lance", 
+                "processId": "product_in1475999016809"
+            }, 
+            "fields": [
+                {
+                    "name": "manager_reason", 
+                    "description": "意见，是否通过？", 
+                    "type": "TEXT", 
+                    "mandatory": true, 
+                    "showTime": false, 
+                    "defaultValue": "通过"
+                }
+            ]
+        }
+    ]
+}
